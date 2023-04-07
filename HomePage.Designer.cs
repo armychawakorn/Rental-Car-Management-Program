@@ -29,12 +29,6 @@
         private void InitializeComponent()
         {
             dataGridView1 = new DataGridView();
-            menuStrip1 = new MenuStrip();
-            filesToolStripMenuItem = new ToolStripMenuItem();
-            openFilesToolStripMenuItem = new ToolStripMenuItem();
-            saveFilesToolStripMenuItem = new ToolStripMenuItem();
-            rentalToolStripMenuItem = new ToolStripMenuItem();
-            rentToolStripMenuItem = new ToolStripMenuItem();
             datagrid_customer_name = new DataGridViewTextBoxColumn();
             datagrid_customer_id = new DataGridViewTextBoxColumn();
             datagrid_customer_phone = new DataGridViewTextBoxColumn();
@@ -45,13 +39,19 @@
             dataGridViewTextBoxColumn1 = new DataGridViewTextBoxColumn();
             datagrid_customer_date_start = new DataGridViewTextBoxColumn();
             datagrid_customer_date_end = new DataGridViewTextBoxColumn();
+            menuStrip1 = new MenuStrip();
+            filesToolStripMenuItem = new ToolStripMenuItem();
+            openFilesToolStripMenuItem = new ToolStripMenuItem();
+            saveFilesToolStripMenuItem = new ToolStripMenuItem();
+            rentalToolStripMenuItem = new ToolStripMenuItem();
+            rentToolStripMenuItem = new ToolStripMenuItem();
             ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
             menuStrip1.SuspendLayout();
             SuspendLayout();
             // 
             // dataGridView1
             // 
-            dataGridView1.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
+            dataGridView1.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
             dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             dataGridView1.Columns.AddRange(new DataGridViewColumn[] { datagrid_customer_name, datagrid_customer_id, datagrid_customer_phone, datagrid_customer_address, datagrid_customer_car, datagrid_customer_car_id, datagrid_customer_car_price, dataGridViewTextBoxColumn1, datagrid_customer_date_start, datagrid_customer_date_end });
             dataGridView1.Location = new Point(12, 27);
@@ -59,50 +59,6 @@
             dataGridView1.RowTemplate.Height = 25;
             dataGridView1.Size = new Size(848, 318);
             dataGridView1.TabIndex = 0;
-            // 
-            // menuStrip1
-            // 
-            menuStrip1.Items.AddRange(new ToolStripItem[] { filesToolStripMenuItem, rentalToolStripMenuItem });
-            menuStrip1.Location = new Point(0, 0);
-            menuStrip1.Name = "menuStrip1";
-            menuStrip1.Size = new Size(872, 24);
-            menuStrip1.TabIndex = 1;
-            menuStrip1.Text = "menuStrip1";
-            // 
-            // filesToolStripMenuItem
-            // 
-            filesToolStripMenuItem.DropDownItems.AddRange(new ToolStripItem[] { openFilesToolStripMenuItem, saveFilesToolStripMenuItem });
-            filesToolStripMenuItem.Name = "filesToolStripMenuItem";
-            filesToolStripMenuItem.Size = new Size(42, 20);
-            filesToolStripMenuItem.Text = "Files";
-            // 
-            // openFilesToolStripMenuItem
-            // 
-            openFilesToolStripMenuItem.Name = "openFilesToolStripMenuItem";
-            openFilesToolStripMenuItem.Size = new Size(127, 22);
-            openFilesToolStripMenuItem.Text = "Open files";
-            openFilesToolStripMenuItem.Click += openFilesToolStripMenuItem_Click;
-            // 
-            // saveFilesToolStripMenuItem
-            // 
-            saveFilesToolStripMenuItem.Name = "saveFilesToolStripMenuItem";
-            saveFilesToolStripMenuItem.Size = new Size(127, 22);
-            saveFilesToolStripMenuItem.Text = "Save Files";
-            saveFilesToolStripMenuItem.Click += saveFilesToolStripMenuItem_Click;
-            // 
-            // rentalToolStripMenuItem
-            // 
-            rentalToolStripMenuItem.DropDownItems.AddRange(new ToolStripItem[] { rentToolStripMenuItem });
-            rentalToolStripMenuItem.Name = "rentalToolStripMenuItem";
-            rentalToolStripMenuItem.Size = new Size(52, 20);
-            rentalToolStripMenuItem.Text = "Rental";
-            // 
-            // rentToolStripMenuItem
-            // 
-            rentToolStripMenuItem.Name = "rentToolStripMenuItem";
-            rentToolStripMenuItem.Size = new Size(119, 22);
-            rentToolStripMenuItem.Text = "Rent Car";
-            rentToolStripMenuItem.Click += rentToolStripMenuItem_Click;
             // 
             // datagrid_customer_name
             // 
@@ -163,6 +119,50 @@
             datagrid_customer_date_end.HeaderText = "วันที่คืน";
             datagrid_customer_date_end.Name = "datagrid_customer_date_end";
             datagrid_customer_date_end.ReadOnly = true;
+            // 
+            // menuStrip1
+            // 
+            menuStrip1.Items.AddRange(new ToolStripItem[] { filesToolStripMenuItem, rentalToolStripMenuItem });
+            menuStrip1.Location = new Point(0, 0);
+            menuStrip1.Name = "menuStrip1";
+            menuStrip1.Size = new Size(872, 24);
+            menuStrip1.TabIndex = 1;
+            menuStrip1.Text = "menuStrip1";
+            // 
+            // filesToolStripMenuItem
+            // 
+            filesToolStripMenuItem.DropDownItems.AddRange(new ToolStripItem[] { openFilesToolStripMenuItem, saveFilesToolStripMenuItem });
+            filesToolStripMenuItem.Name = "filesToolStripMenuItem";
+            filesToolStripMenuItem.Size = new Size(42, 20);
+            filesToolStripMenuItem.Text = "Files";
+            // 
+            // openFilesToolStripMenuItem
+            // 
+            openFilesToolStripMenuItem.Name = "openFilesToolStripMenuItem";
+            openFilesToolStripMenuItem.Size = new Size(127, 22);
+            openFilesToolStripMenuItem.Text = "Open files";
+            openFilesToolStripMenuItem.Click += openFilesToolStripMenuItem_Click;
+            // 
+            // saveFilesToolStripMenuItem
+            // 
+            saveFilesToolStripMenuItem.Name = "saveFilesToolStripMenuItem";
+            saveFilesToolStripMenuItem.Size = new Size(127, 22);
+            saveFilesToolStripMenuItem.Text = "Save Files";
+            saveFilesToolStripMenuItem.Click += saveFilesToolStripMenuItem_Click;
+            // 
+            // rentalToolStripMenuItem
+            // 
+            rentalToolStripMenuItem.DropDownItems.AddRange(new ToolStripItem[] { rentToolStripMenuItem });
+            rentalToolStripMenuItem.Name = "rentalToolStripMenuItem";
+            rentalToolStripMenuItem.Size = new Size(52, 20);
+            rentalToolStripMenuItem.Text = "Rental";
+            // 
+            // rentToolStripMenuItem
+            // 
+            rentToolStripMenuItem.Name = "rentToolStripMenuItem";
+            rentToolStripMenuItem.Size = new Size(119, 22);
+            rentToolStripMenuItem.Text = "Rent Car";
+            rentToolStripMenuItem.Click += rentToolStripMenuItem_Click;
             // 
             // HomePage
             // 

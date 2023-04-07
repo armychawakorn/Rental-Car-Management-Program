@@ -77,14 +77,14 @@ namespace Rental_Car_Management_Program
                         rentlist.Add(
                             new RentalList(
                                 new Person(
-                                    data[1], 
-                                    data[0], 
-                                    data[2], 
+                                    data[1],
+                                    data[0],
+                                    data[2],
                                     data[3]
                                 ),
                                 new Car(
-                                    data[4], 
-                                    data[5], 
+                                    data[4],
+                                    data[5],
                                     decimal.Parse(
                                         data[6]
                                     )
