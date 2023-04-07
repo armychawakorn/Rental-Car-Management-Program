@@ -9,4 +9,10 @@
     <ImplicitUsings>enable</ImplicitUsings>
   </PropertyGroup>
 
+  <ItemGroup>
+    <Reference Include="Car-for-rent">
+      <HintPath>bin\Debug\net6.0-windows\Car-for-rent.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
 </Project>
