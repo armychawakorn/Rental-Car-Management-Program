@@ -1,6 +1,6 @@
-using Car_for_rent.Class;
+using Rental_Car_Management_Program.Class;
 
-namespace Car_for_rent
+namespace Rental_Car_Management_Program
 {
     public partial class AddPage : Form
     {

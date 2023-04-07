@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Car_for_rent.Class
+namespace Rental_Car_Management_Program.Class
 {
     public class RentalList
     {

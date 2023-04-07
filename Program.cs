@@ -1,4 +1,4 @@
-namespace Car_for_rent
+namespace Rental_Car_Management_Program
 {
     internal static class Program
     {

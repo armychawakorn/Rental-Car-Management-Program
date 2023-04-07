@@ -1,4 +1,4 @@
-﻿using Car_for_rent.Class;
+﻿using Rental_Car_Management_Program.Class;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -9,7 +9,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace Car_for_rent
+namespace Rental_Car_Management_Program
 {
     public partial class HomePage : Form
     {
